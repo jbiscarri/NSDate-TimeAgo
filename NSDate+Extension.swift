@@ -112,7 +112,7 @@ extension Date {
 
         if components.hour! > 0 {
             if components.hour! < 2 {
-                return NSDateTimeAgoLocalizedStrings("An hour ago")
+                return NSDateTimeAgoLocalizedStrings("1 hour ago")
             } else  {
                 return self.string(fromFormat: "%%d %@hours ago", withValue: components.hour!)
             }
@@ -120,7 +120,7 @@ extension Date {
 
         if components.minute! > 0 {
             if components.minute! < 2 {
-                return NSDateTimeAgoLocalizedStrings("A minute ago")
+                return NSDateTimeAgoLocalizedStrings("1 minute ago")
             } else {
                 return self.string(fromFormat: "%%d %@minutes ago", withValue: components.minute!)
             }
